@@ -11,6 +11,10 @@ class Graph:
         self.simpleInit()
         self._terminal = [16, 17, 18];
         self._lightThreshold = 2
+    def vertexL(self):
+        return self._vertexL
+    def edgeL(self):
+        return self._edgeL
     def setVertex(self):
         vertexNum = 0
         for e in self._edgeL:

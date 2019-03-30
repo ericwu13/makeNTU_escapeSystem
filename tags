@@ -4,24 +4,135 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ANNOTATIONS	src/objectDetection/data/coco.py	/^ANNOTATIONS = 'annotations'$/;"	v
+ArgumentParser	src/objectDetection/preprocess/imgEnhance.py	/^def ArgumentParser():$/;"	f
+ArgumentParser	src/objectDetection/preprocess/jsonParser.py	/^def ArgumentParser():$/;"	f
+BB	src/objectDetection/eval.py	/^        BB = BB[sorted_ind, :]$/;"	v
+BB	src/objectDetection/eval.py	/^        BB = np.array([[float(z) for z in x[2:]] for x in splitlines])$/;"	v
+BBGT	src/objectDetection/eval.py	/^            BBGT = R['bbox'].astype(float)$/;"	v
 BHeap	src/path/bheap.py	/^class BHeap:$/;"	c
+BaseTransform	src/objectDetection/data/__init__.py	/^class BaseTransform:$/;"	c
+COCOAnnotationTransform	src/objectDetection/data/coco.py	/^class COCOAnnotationTransform(object):$/;"	c
+COCODetection	src/objectDetection/data/coco.py	/^class COCODetection(data.Dataset):$/;"	c
+COCO_API	src/objectDetection/data/coco.py	/^COCO_API = 'PythonAPI'$/;"	v
+COCO_CLASSES	src/objectDetection/data/coco.py	/^COCO_CLASSES = ('person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus',$/;"	v
+COCO_ROOT	src/objectDetection/data/coco.py	/^COCO_ROOT = osp.join(HOME, 'data\/coco\/')$/;"	v
+COLORS	src/objectDetection/data/config.py	/^COLORS = ((255, 0, 0, 128), (0, 255, 0, 128), (0, 0, 255, 128),$/;"	v
+COLORS	src/objectDetection/demo/live.py	/^COLORS = [(255, 0, 0), (0, 255, 0), (0, 0, 255)]$/;"	v
+Compose	src/objectDetection/utils/augmentations.py	/^class Compose(object):$/;"	c
+ConvertColor	src/objectDetection/utils/augmentations.py	/^class ConvertColor(object):$/;"	c
+ConvertFromInts	src/objectDetection/utils/augmentations.py	/^class ConvertFromInts(object):$/;"	c
+DATASET	src/objectDetection/preprocess/jsonParser.py	/^DATASET = "VOC2007"$/;"	v
 DOWN	src/path/vertex.py	/^    DOWN = 1$/;"	v	class:Direction
+Detect	src/objectDetection/layers/functions/detection.py	/^class Detect(Function):$/;"	c
 Direction	src/path/vertex.py	/^class Direction(Enum):$/;"	c
 Edge	src/path/edge.py	/^class Edge:$/;"	c
+Expand	src/objectDetection/utils/augmentations.py	/^class Expand(object):$/;"	c
+FONT	src/objectDetection/demo/live.py	/^FONT = cv2.FONT_HERSHEY_SIMPLEX$/;"	v
 Graph	src/path/graph.py	/^class Graph:$/;"	c
+HOME	src/objectDetection/data/config.py	/^HOME = os.path.expanduser("~")$/;"	v
 ID	src/path/bheap.py	/^ID = 1$/;"	v
+IMAGES	src/objectDetection/data/coco.py	/^IMAGES = 'images'$/;"	v
+IMG_PATH	src/objectDetection/preprocess/imgEnhance.py	/^    IMG_PATH = os.path.join(args.output_dir, args.dataset, 'PNGImages')$/;"	v
+IMG_PATH	src/objectDetection/preprocess/jsonParser.py	/^IMG_PATH = osp.join(args.output_path, DATASET, 'JPEGImages')$/;"	v
+INSTANCES_SET	src/objectDetection/data/coco.py	/^INSTANCES_SET = 'instances_{}.json'$/;"	v
+L2Norm	src/objectDetection/layers/modules/l2norm.py	/^class L2Norm(nn.Module):$/;"	c
 LEFT	src/path/vertex.py	/^    LEFT = 3$/;"	v	class:Direction
+Lambda	src/objectDetection/utils/augmentations.py	/^class Lambda(object):$/;"	c
+MEANS	src/objectDetection/data/config.py	/^MEANS = (84, 80, 75)$/;"	v
+MultiBoxLoss	src/objectDetection/layers/modules/multibox_loss.py	/^class MultiBoxLoss(nn.Module):$/;"	c
 NONE	src/path/vertex.py	/^    NONE = 4$/;"	v	class:Direction
 ObjectDetectionMgr	src/objectDetection/__init__.py	/^class ObjectDetectionMgr:$/;"	c
 PRIORITY	src/path/bheap.py	/^PRIORITY = 0$/;"	v
 PathMgr	src/path/__init__.py	/^class PathMgr:$/;"	c
+PhotometricDistort	src/objectDetection/utils/augmentations.py	/^class PhotometricDistort(object):$/;"	c
+PriorBox	src/objectDetection/layers/functions/prior_box.py	/^class PriorBox(object):$/;"	c
+R	src/objectDetection/eval.py	/^            R = class_recs[image_ids[d]]$/;"	v
 RIGHT	src/path/vertex.py	/^    RIGHT = 2$/;"	v	class:Direction
+RandomBrightness	src/objectDetection/utils/augmentations.py	/^class RandomBrightness(object):$/;"	c
+RandomContrast	src/objectDetection/utils/augmentations.py	/^class RandomContrast(object):$/;"	c
+RandomHue	src/objectDetection/utils/augmentations.py	/^class RandomHue(object):$/;"	c
+RandomLightingNoise	src/objectDetection/utils/augmentations.py	/^class RandomLightingNoise(object):$/;"	c
+RandomMirror	src/objectDetection/utils/augmentations.py	/^class RandomMirror(object):$/;"	c
+RandomSampleCrop	src/objectDetection/utils/augmentations.py	/^class RandomSampleCrop(object):$/;"	c
+RandomSaturation	src/objectDetection/utils/augmentations.py	/^class RandomSaturation(object):$/;"	c
+Resize	src/objectDetection/utils/augmentations.py	/^class Resize(object):$/;"	c
 Rpi	src/rpi/__init__.py	/^class Rpi:$/;"	c
+SSD	src/objectDetection/ssd.py	/^class SSD(nn.Module):$/;"	c
+SSDAugmentation	src/objectDetection/utils/augmentations.py	/^class SSDAugmentation(object):$/;"	c
 SegmentationMgr	src/segmentation/__init__.py	/^class SegmentationMgr:$/;"	c
 Stm	src/stm/__init__.py	/^class Stm:$/;"	c
+SubtractMeans	src/objectDetection/utils/augmentations.py	/^class SubtractMeans(object):$/;"	c
+SwapChannels	src/objectDetection/utils/augmentations.py	/^class SwapChannels(object):$/;"	c
+Timer	src/objectDetection/eval.py	/^class Timer(object):$/;"	c
+ToAbsoluteCoords	src/objectDetection/utils/augmentations.py	/^class ToAbsoluteCoords(object):$/;"	c
+ToCV2Image	src/objectDetection/utils/augmentations.py	/^class ToCV2Image(object):$/;"	c
+ToPercentCoords	src/objectDetection/utils/augmentations.py	/^class ToPercentCoords(object):$/;"	c
+ToTensor	src/objectDetection/utils/augmentations.py	/^class ToTensor(object):$/;"	c
 UP	src/path/vertex.py	/^    UP = 0$/;"	v	class:Direction
+VOCAnnotationTransform	src/objectDetection/data/voc0712.py	/^class VOCAnnotationTransform(object):$/;"	c
+VOCDetection	src/objectDetection/data/voc0712.py	/^class VOCDetection(data.Dataset):$/;"	c
+VOC_CLASSES	src/objectDetection/data/voc0712.py	/^VOC_CLASSES = (  # always index 0$/;"	v
+VOC_ROOT	src/objectDetection/data/voc0712.py	/^VOC_ROOT = osp.join(HOME, "data\/VOCdevkit\/")$/;"	v
 Vertex	src/path/vertex.py	/^class Vertex:$/;"	c
+XML_PATH	src/objectDetection/preprocess/imgEnhance.py	/^    XML_PATH = os.path.join(args.output_dir, args.dataset, 'Annotations')$/;"	v
+XML_PATH	src/objectDetection/preprocess/jsonParser.py	/^XML_PATH = osp.join(args.output_path, DATASET, 'Annotations')$/;"	v
+YEAR	src/objectDetection/eval.py	/^YEAR = '2007'$/;"	v
+__all__	src/objectDetection/layers/functions/__init__.py	/^__all__ = ['Detect', 'PriorBox']$/;"	v
+__all__	src/objectDetection/layers/modules/__init__.py	/^__all__ = ['L2Norm', 'MultiBoxLoss']$/;"	v
+__call__	src/objectDetection/data/__init__.py	/^    def __call__(self, image, boxes=None, labels=None):$/;"	m	class:BaseTransform	file:
+__call__	src/objectDetection/data/coco.py	/^    def __call__(self, target, width, height):$/;"	m	class:COCOAnnotationTransform	file:
+__call__	src/objectDetection/data/voc0712.py	/^    def __call__(self, target, width, height):$/;"	m	class:VOCAnnotationTransform	file:
+__call__	src/objectDetection/utils/augmentations.py	/^    def __call__(self, cvimage, boxes=None, labels=None):$/;"	m	class:ToTensor	file:
+__call__	src/objectDetection/utils/augmentations.py	/^    def __call__(self, image):$/;"	m	class:SwapChannels	file:
+__call__	src/objectDetection/utils/augmentations.py	/^    def __call__(self, image, boxes, classes):$/;"	m	class:RandomMirror	file:
+__call__	src/objectDetection/utils/augmentations.py	/^    def __call__(self, image, boxes, labels):$/;"	m	class:Expand	file:
+__call__	src/objectDetection/utils/augmentations.py	/^    def __call__(self, image, boxes, labels):$/;"	m	class:PhotometricDistort	file:
+__call__	src/objectDetection/utils/augmentations.py	/^    def __call__(self, image, boxes=None, labels=None):$/;"	m	class:ConvertColor	file:
+__call__	src/objectDetection/utils/augmentations.py	/^    def __call__(self, image, boxes=None, labels=None):$/;"	m	class:ConvertFromInts	file:
+__call__	src/objectDetection/utils/augmentations.py	/^    def __call__(self, image, boxes=None, labels=None):$/;"	m	class:RandomBrightness	file:
+__call__	src/objectDetection/utils/augmentations.py	/^    def __call__(self, image, boxes=None, labels=None):$/;"	m	class:RandomContrast	file:
+__call__	src/objectDetection/utils/augmentations.py	/^    def __call__(self, image, boxes=None, labels=None):$/;"	m	class:RandomHue	file:
+__call__	src/objectDetection/utils/augmentations.py	/^    def __call__(self, image, boxes=None, labels=None):$/;"	m	class:RandomLightingNoise	file:
+__call__	src/objectDetection/utils/augmentations.py	/^    def __call__(self, image, boxes=None, labels=None):$/;"	m	class:RandomSampleCrop	file:
+__call__	src/objectDetection/utils/augmentations.py	/^    def __call__(self, image, boxes=None, labels=None):$/;"	m	class:RandomSaturation	file:
+__call__	src/objectDetection/utils/augmentations.py	/^    def __call__(self, image, boxes=None, labels=None):$/;"	m	class:Resize	file:
+__call__	src/objectDetection/utils/augmentations.py	/^    def __call__(self, image, boxes=None, labels=None):$/;"	m	class:SubtractMeans	file:
+__call__	src/objectDetection/utils/augmentations.py	/^    def __call__(self, image, boxes=None, labels=None):$/;"	m	class:ToAbsoluteCoords	file:
+__call__	src/objectDetection/utils/augmentations.py	/^    def __call__(self, image, boxes=None, labels=None):$/;"	m	class:ToPercentCoords	file:
+__call__	src/objectDetection/utils/augmentations.py	/^    def __call__(self, img, boxes, labels):$/;"	m	class:SSDAugmentation	file:
+__call__	src/objectDetection/utils/augmentations.py	/^    def __call__(self, img, boxes=None, labels=None):$/;"	m	class:Compose	file:
+__call__	src/objectDetection/utils/augmentations.py	/^    def __call__(self, img, boxes=None, labels=None):$/;"	m	class:Lambda	file:
+__call__	src/objectDetection/utils/augmentations.py	/^    def __call__(self, tensor, boxes=None, labels=None):$/;"	m	class:ToCV2Image	file:
+__getitem__	src/objectDetection/data/coco.py	/^    def __getitem__(self, index):$/;"	m	class:COCODetection	file:
+__getitem__	src/objectDetection/data/voc0712.py	/^    def __getitem__(self, index):$/;"	m	class:VOCDetection	file:
 __init__	src/objectDetection/__init__.py	/^    def __init__(self):$/;"	m	class:ObjectDetectionMgr
+__init__	src/objectDetection/data/__init__.py	/^    def __init__(self, size, mean):$/;"	m	class:BaseTransform
+__init__	src/objectDetection/data/coco.py	/^    def __init__(self):$/;"	m	class:COCOAnnotationTransform
+__init__	src/objectDetection/data/coco.py	/^    def __init__(self, root, image_set='trainval35k', transform=None,$/;"	m	class:COCODetection
+__init__	src/objectDetection/data/voc0712.py	/^    def __init__(self, class_to_ind=None, keep_difficult=False):$/;"	m	class:VOCAnnotationTransform
+__init__	src/objectDetection/data/voc0712.py	/^    def __init__(self, root,$/;"	m	class:VOCDetection
+__init__	src/objectDetection/eval.py	/^    def __init__(self):$/;"	m	class:Timer
+__init__	src/objectDetection/layers/functions/detection.py	/^    def __init__(self, num_classes, bkg_label, top_k, conf_thresh, nms_thresh):$/;"	m	class:Detect
+__init__	src/objectDetection/layers/functions/prior_box.py	/^    def __init__(self, cfg):$/;"	m	class:PriorBox
+__init__	src/objectDetection/layers/modules/l2norm.py	/^    def __init__(self,n_channels, scale):$/;"	m	class:L2Norm
+__init__	src/objectDetection/layers/modules/multibox_loss.py	/^    def __init__(self, num_classes, overlap_thresh, prior_for_matching,$/;"	m	class:MultiBoxLoss
+__init__	src/objectDetection/ssd.py	/^    def __init__(self, phase, size, base, extras, head, num_classes):$/;"	m	class:SSD
+__init__	src/objectDetection/utils/augmentations.py	/^    def __init__(self):$/;"	m	class:PhotometricDistort
+__init__	src/objectDetection/utils/augmentations.py	/^    def __init__(self):$/;"	m	class:RandomLightingNoise
+__init__	src/objectDetection/utils/augmentations.py	/^    def __init__(self):$/;"	m	class:RandomSampleCrop
+__init__	src/objectDetection/utils/augmentations.py	/^    def __init__(self, current='BGR', transform='HSV'):$/;"	m	class:ConvertColor
+__init__	src/objectDetection/utils/augmentations.py	/^    def __init__(self, delta=18.0):$/;"	m	class:RandomHue
+__init__	src/objectDetection/utils/augmentations.py	/^    def __init__(self, delta=32):$/;"	m	class:RandomBrightness
+__init__	src/objectDetection/utils/augmentations.py	/^    def __init__(self, lambd):$/;"	m	class:Lambda
+__init__	src/objectDetection/utils/augmentations.py	/^    def __init__(self, lower=0.5, upper=1.5):$/;"	m	class:RandomContrast
+__init__	src/objectDetection/utils/augmentations.py	/^    def __init__(self, lower=0.5, upper=1.5):$/;"	m	class:RandomSaturation
+__init__	src/objectDetection/utils/augmentations.py	/^    def __init__(self, mean):$/;"	m	class:Expand
+__init__	src/objectDetection/utils/augmentations.py	/^    def __init__(self, mean):$/;"	m	class:SubtractMeans
+__init__	src/objectDetection/utils/augmentations.py	/^    def __init__(self, size=300):$/;"	m	class:Resize
+__init__	src/objectDetection/utils/augmentations.py	/^    def __init__(self, size=300, mean=(104, 117, 123)):$/;"	m	class:SSDAugmentation
+__init__	src/objectDetection/utils/augmentations.py	/^    def __init__(self, swaps):$/;"	m	class:SwapChannels
+__init__	src/objectDetection/utils/augmentations.py	/^    def __init__(self, transforms):$/;"	m	class:Compose
 __init__	src/path/__init__.py	/^    def __init__(self):$/;"	m	class:PathMgr
 __init__	src/path/bheap.py	/^    def __init__(self, size):$/;"	m	class:BHeap
 __init__	src/path/edge.py	/^    def __init__(self, i):$/;"	m	class:Edge
@@ -30,40 +141,198 @@ __init__	src/path/vertex.py	/^    def __init__(self, i):$/;"	m	class:Vertex
 __init__	src/rpi/__init__.py	/^    def __init__(self):$/;"	m	class:Rpi
 __init__	src/segmentation/__init__.py	/^    def __init__(self):$/;"	m	class:SegmentationMgr
 __init__	src/stm/__init__.py	/^    def __init__(self):$/;"	m	class:Stm
+__len__	src/objectDetection/data/coco.py	/^    def __len__(self):$/;"	m	class:COCODetection	file:
+__len__	src/objectDetection/data/voc0712.py	/^    def __len__(self):$/;"	m	class:VOCDetection	file:
+__repr__	src/objectDetection/data/coco.py	/^    def __repr__(self):$/;"	m	class:COCODetection	file:
+aa	src/objectDetection/preprocess/toJson.py	/^aa = json.dump(total, f, indent=4, separators=(',', ":"))/;"	v
 addEdge	src/path/vertex.py	/^    def addEdge(self, i):$/;"	m	class:Vertex
+add_extras	src/objectDetection/ssd.py	/^def add_extras(cfg, i, batch_norm=False):$/;"	f
+adjust_learning_rate	src/objectDetection/train.py	/^def adjust_learning_rate(optimizer, gamma, step):$/;"	f
+anno_id	src/objectDetection/preprocess/toJson.py	/^anno_id = 0$/;"	v
+annopath	src/objectDetection/eval.py	/^annopath = os.path.join(args.voc_root, 'VOC2007', 'Annotations', '%s.xml')$/;"	v
+annotation	src/objectDetection/preprocess/jsonParser.py	/^    annotation = data['annotations']$/;"	v
+annotation	src/objectDetection/preprocess/toJson.py	/^annotation = []$/;"	v
+ap	src/objectDetection/eval.py	/^        ap = -1.$/;"	v
+ap	src/objectDetection/eval.py	/^        ap = voc_ap(rec, prec, use_07_metric)$/;"	v
+args	src/objectDetection/demo/live.py	/^args = parser.parse_args()$/;"	v
+args	src/objectDetection/eval.py	/^args = parser.parse_args()$/;"	v
+args	src/objectDetection/preprocess/imgEnhance.py	/^    args = ArgumentParser()$/;"	v
+args	src/objectDetection/preprocess/jsonParser.py	/^args = ArgumentParser()$/;"	v
+args	src/objectDetection/test.py	/^args = parser.parse_args()$/;"	v
+args	src/objectDetection/train.py	/^args = parser.parse_args()$/;"	v
 arrayG	src/segmentation.py	/^arrayG = np.array([[pointG for i in range(640)] for j in range(320)])$/;"	v
 arrayR	src/segmentation.py	/^arrayR = np.array([[pointR for i in range(640)] for j in range(320)])$/;"	v
 arrayY	src/segmentation.py	/^arrayY = np.array([[pointY for i in range(640)] for j in range(320)])$/;"	v
+base	src/objectDetection/ssd.py	/^base = {$/;"	v
+base_transform	src/objectDetection/data/__init__.py	/^def base_transform(image, size, mean):$/;"	f
+bb	src/objectDetection/eval.py	/^            bb = BB[d, :].astype(float)$/;"	v
+bbox	src/objectDetection/eval.py	/^        bbox = np.array([x['bbox'] for x in R])$/;"	v
+build_ssd	src/objectDetection/ssd.py	/^def build_ssd(phase, size=300, num_classes=21):$/;"	f
+cachefile	src/objectDetection/eval.py	/^    cachefile = os.path.join(cachedir, 'annots.pkl')$/;"	v
+category	src/objectDetection/preprocess/jsonParser.py	/^    category = [c['name'] for c in data['categories']]$/;"	v
+category_count	src/objectDetection/preprocess/jsonParser.py	/^category_count = [0 for i in range(len(category))] $/;"	v
+center_size	src/objectDetection/layers/box_utils.py	/^def center_size(boxes):$/;"	f
+class_recs	src/objectDetection/eval.py	/^    class_recs = {}$/;"	v
+coco	src/objectDetection/data/config.py	/^coco = {$/;"	v
+confidence	src/objectDetection/eval.py	/^        confidence = np.array([float(x[1]) for x in splitlines])$/;"	v
 configure	src/stm/__init__.py	/^    def configure(self, graph):$/;"	m	class:Stm
+counter	src/objectDetection/preprocess/jsonParser.py	/^counter = 0$/;"	v
+createChildNode	src/objectDetection/preprocess/xmlGenerator.py	/^def createChildNode(doc, tag, attr, parent_node):$/;"	f
+createElementNode	src/objectDetection/preprocess/xmlGenerator.py	/^def createElementNode(doc, tag, attr): $/;"	f
+createObjectNode	src/objectDetection/preprocess/xmlGenerator.py	/^def createObjectNode(doc, attr, width, height):$/;"	f
+createRootNode	src/objectDetection/preprocess/xmlGenerator.py	/^def createRootNode(dataset, fname, width, height, channel, ):$/;"	f
+create_vis_plot	src/objectDetection/train.py	/^def create_vis_plot(_xlabel, _ylabel, _title, _legend):$/;"	f
+cv2_demo	src/objectDetection/demo/live.py	/^def cv2_demo(net, transform):$/;"	f
+d	src/objectDetection/preprocess/toJson.py	/^        d = {}$/;"	v
+d	src/objectDetection/preprocess/toJson.py	/^    d = {}$/;"	v
+data	src/objectDetection/preprocess/jsonParser.py	/^    data = json.load(f)$/;"	v
+data	src/objectDetection/preprocess/toJson.py	/^        data = line.split()$/;"	v
+dataset_mean	src/objectDetection/eval.py	/^dataset_mean = (11, 10, 10)$/;"	v
+decode	src/objectDetection/layers/box_utils.py	/^def decode(loc, priors, variances):$/;"	f
 decreaseKey	src/path/bheap.py	/^    def decreaseKey(self, id, newPriority):$/;"	m	class:BHeap
+det	src/objectDetection/eval.py	/^        det = [False] * len(R)$/;"	v
+detection_collate	src/objectDetection/data/__init__.py	/^def detection_collate(batch):$/;"	f
+detfile	src/objectDetection/eval.py	/^    detfile = detpath.format(classname)$/;"	v
+devkit_path	src/objectDetection/eval.py	/^devkit_path = args.voc_root + 'VOC' + YEAR$/;"	v
+difficult	src/objectDetection/eval.py	/^        difficult = np.array([x['difficult'] for x in R]).astype(np.bool)$/;"	v
+direct	src/path/vertex.py	/^    def direct(self):$/;"	m	class:Vertex
 disG	src/segmentation.py	/^disG = 280$/;"	v
 disR	src/segmentation.py	/^disR = 250$/;"	v
 disY	src/segmentation.py	/^disY = 350$/;"	v
 dist	src/path/vertex.py	/^    def dist(self):$/;"	m	class:Vertex
+do_python_eval	src/objectDetection/eval.py	/^def do_python_eval(output_dir='output', use_07=True):$/;"	f
+edgeL	src/path/graph.py	/^    def edgeL(self):$/;"	m	class:Graph
 edgeL	src/path/vertex.py	/^    def edgeL(self):$/;"	m	class:Vertex
+encode	src/objectDetection/layers/box_utils.py	/^def encode(matched, priors, variances):$/;"	f
+enhance	src/objectDetection/preprocess/imgEnhance.py	/^def enhance(mode, img_path):$/;"	f
+evaluate_detections	src/objectDetection/eval.py	/^def evaluate_detections(box_list, output_dir, dataset):$/;"	f
+extras	src/objectDetection/ssd.py	/^extras = {$/;"	v
+f	src/objectDetection/preprocess/toJson.py	/^f = open("output.json", "w")$/;"	v
+f	src/objectDetection/preprocess/toJson.py	/^f = open("pattern")$/;"	v
+fnames	src/objectDetection/preprocess/jsonParser.py	/^fnames = list(total_annotation.keys())$/;"	v
+forward	src/objectDetection/layers/functions/detection.py	/^    def forward(self, loc_data, conf_data, prior_data):$/;"	m	class:Detect
+forward	src/objectDetection/layers/functions/prior_box.py	/^    def forward(self):$/;"	m	class:PriorBox
+forward	src/objectDetection/layers/modules/l2norm.py	/^    def forward(self, x):$/;"	m	class:L2Norm
+forward	src/objectDetection/layers/modules/multibox_loss.py	/^    def forward(self, predictions, targets):$/;"	m	class:MultiBoxLoss
+forward	src/objectDetection/ssd.py	/^    def forward(self, x):$/;"	m	class:SSD
+fp	src/objectDetection/eval.py	/^        fp = np.cumsum(fp)$/;"	v
+fp	src/objectDetection/eval.py	/^        fp = np.zeros(nd)$/;"	v
+generate_txt	src/objectDetection/preprocess/txtGenerator.py	/^def generate_txt(dataset, fnames = None):$/;"	f
+get_label_map	src/objectDetection/data/coco.py	/^def get_label_map(label_file):$/;"	f
+get_output_dir	src/objectDetection/eval.py	/^def get_output_dir(name, phase):$/;"	f
+get_voc_results_file_template	src/objectDetection/eval.py	/^def get_voc_results_file_template(image_set, cls):$/;"	f
 graph	src/graph.py	/^graph = Graph()$/;"	v
+help	src/objectDetection/demo/live.py	/^                    help='Use cuda in live demo')$/;"	v
+help	src/objectDetection/eval.py	/^                    help='Cleanup and remove results files following eval')$/;"	v
+help	src/objectDetection/eval.py	/^                    help='Detection confidence threshold')$/;"	v
+help	src/objectDetection/eval.py	/^                    help='File path to save results')$/;"	v
+help	src/objectDetection/eval.py	/^                    help='Further restrict the number of predictions to parse')$/;"	v
+help	src/objectDetection/eval.py	/^                    help='Location of VOC root directory')$/;"	v
+help	src/objectDetection/eval.py	/^                    help='Trained state_dict file path to open')$/;"	v
+help	src/objectDetection/eval.py	/^                    help='Use cuda to train model')$/;"	v
+help	src/objectDetection/test.py	/^                    help='Dir to save results')$/;"	v
+help	src/objectDetection/test.py	/^                    help='Final confidence threshold')$/;"	v
+help	src/objectDetection/test.py	/^                    help='Use cuda to train model')$/;"	v
+help	src/objectDetection/train.py	/^                    help='Batch size for training')$/;"	v
+help	src/objectDetection/train.py	/^                    help='Checkpoint state_dict file to resume training from')$/;"	v
+help	src/objectDetection/train.py	/^                    help='Dataset root directory path')$/;"	v
+help	src/objectDetection/train.py	/^                    help='Directory for saving checkpoint models')$/;"	v
+help	src/objectDetection/train.py	/^                    help='Gamma update for SGD')$/;"	v
+help	src/objectDetection/train.py	/^                    help='Momentum value for optim')$/;"	v
+help	src/objectDetection/train.py	/^                    help='Number of workers used in dataloading')$/;"	v
+help	src/objectDetection/train.py	/^                    help='Pretrained base model')$/;"	v
+help	src/objectDetection/train.py	/^                    help='Resume training at this iter')$/;"	v
+help	src/objectDetection/train.py	/^                    help='Use CUDA to train model')$/;"	v
+help	src/objectDetection/train.py	/^                    help='Use visdom for loss visualization')$/;"	v
+help	src/objectDetection/train.py	/^                    help='Weight decay for SGD')$/;"	v
+help	src/objectDetection/train.py	/^                    help='initial learning rate')$/;"	v
 id	src/path/edge.py	/^    def id(self):$/;"	m	class:Edge
 id	src/path/vertex.py	/^    def id(self):$/;"	m	class:Vertex
+idx	src/objectDetection/preprocess/jsonParser.py	/^    idx = a['category_id']-1$/;"	v
+ih	src/objectDetection/eval.py	/^                ih = np.maximum(iymax - iymin, 0.)$/;"	v
+imageDict	src/objectDetection/preprocess/jsonParser.py	/^imageDict = {}$/;"	v
+image_id	src/objectDetection/preprocess/toJson.py	/^image_id = 0$/;"	v
+image_ids	src/objectDetection/eval.py	/^        image_ids = [image_ids[x] for x in sorted_ind]$/;"	v
+image_ids	src/objectDetection/eval.py	/^        image_ids = [x[0] for x in splitlines]$/;"	v
+image_name	src/objectDetection/preprocess/jsonParser.py	/^    image_name = imageDict[a['image_id']].replace('.jpg', '')$/;"	v
+imagenames	src/objectDetection/eval.py	/^    imagenames = [x.strip() for x in lines]$/;"	v
+images	src/objectDetection/preprocess/jsonParser.py	/^    images = data['images']$/;"	v
+images	src/objectDetection/preprocess/toJson.py	/^images = []$/;"	v
+img	src/objectDetection/preprocess/jsonParser.py	/^img = imread(images[0])$/;"	v
 img	src/segmentation.py	/^img = cv2.imread('..\/data\/data3.jpg')$/;"	v
+imgpath	src/objectDetection/eval.py	/^imgpath = os.path.join(args.voc_root, 'VOC2007', 'JPEGImages', '%s.jpg')$/;"	v
+imgsetpath	src/objectDetection/eval.py	/^imgsetpath = os.path.join(args.voc_root, 'VOC2007', 'ImageSets',$/;"	v
 initEdge	src/path/graph.py	/^    def initEdge(self):$/;"	m	class:Graph
 initializeSSSP	src/path/vertex.py	/^    def initializeSSSP(self, n):$/;"	m	class:Vertex
 insert	src/path/bheap.py	/^    def insert(self, id, priority):$/;"	m	class:BHeap
+inters	src/objectDetection/eval.py	/^                inters = iw * ih$/;"	v
+intersect	src/objectDetection/layers/box_utils.py	/^def intersect(box_a, box_b):$/;"	f
+intersect	src/objectDetection/utils/augmentations.py	/^def intersect(box_a, box_b):$/;"	f
 isEmpty	src/path/bheap.py	/^    def isEmpty(self):$/;"	m	class:BHeap
 isLight	src/path/vertex.py	/^    def isLight(self):$/;"	m	class:Vertex
+is_save	src/objectDetection/preprocess/jsonParser.py	/^    is_save = True$/;"	v
+iw	src/objectDetection/eval.py	/^                iw = np.maximum(ixmax - ixmin, 0.)$/;"	v
+ixmax	src/objectDetection/eval.py	/^                ixmax = np.minimum(BBGT[:, 2], bb[2])$/;"	v
+ixmin	src/objectDetection/eval.py	/^                ixmin = np.maximum(BBGT[:, 0], bb[0])$/;"	v
+iymax	src/objectDetection/eval.py	/^                iymax = np.minimum(BBGT[:, 3], bb[3])$/;"	v
+iymin	src/objectDetection/eval.py	/^                iymin = np.maximum(BBGT[:, 1], bb[1])$/;"	v
+jaccard	src/objectDetection/layers/box_utils.py	/^def jaccard(box_a, box_b):$/;"	f
+jaccard_numpy	src/objectDetection/utils/augmentations.py	/^def jaccard_numpy(box_a, box_b):$/;"	f
+jmax	src/objectDetection/eval.py	/^                jmax = np.argmax(overlaps)$/;"	v
+key	src/objectDetection/preprocess/jsonParser.py	/^        key = image['id']$/;"	v
 light	src/path/vertex.py	/^    def light(self):$/;"	m	class:Vertex
+lines	src/objectDetection/eval.py	/^        lines = f.readlines()$/;"	v
+lines	src/objectDetection/preprocess/toJson.py	/^lines = f.readlines()$/;"	v
 loaction	src/path/vertex.py	/^    def loaction(self):$/;"	m	class:Vertex
+load_weights	src/objectDetection/ssd.py	/^    def load_weights(self, base_file):$/;"	m	class:SSD
+log_sum_exp	src/objectDetection/layers/box_utils.py	/^def log_sum_exp(x):$/;"	f
+match	src/objectDetection/layers/box_utils.py	/^def match(threshold, truths, priors, variances, labels, loc_t, conf_t, idx):$/;"	f
+mbox	src/objectDetection/ssd.py	/^mbox = {$/;"	v
+mean	src/objectDetection/preprocess/jsonParser.py	/^mean = np.mean(img, (0,1))$/;"	v
+mm	src/objectDetection/preprocess/imgEnhance.py	/^    mm = enhance(args.mode, IMG_PATH)$/;"	v
+multibox	src/objectDetection/ssd.py	/^def multibox(vgg, extra_layers, cfg, num_classes):$/;"	f
+nd	src/objectDetection/eval.py	/^        nd = len(image_ids)$/;"	v
+nms	src/objectDetection/layers/box_utils.py	/^def nms(boxes, scores, overlap=0.5, top_k=200):$/;"	f
+npos	src/objectDetection/eval.py	/^        npos = npos + sum(~difficult)$/;"	v
+npos	src/objectDetection/eval.py	/^    npos = 0$/;"	v
+object_node	src/objectDetection/preprocess/jsonParser.py	/^        object_node = createObjectNode(doc, anno, width, height)$/;"	v
 otherVertex	src/path/edge.py	/^    def otherVertex(self, i):$/;"	m	class:Edge
+overlaps	src/objectDetection/eval.py	/^                overlaps = inters \/ uni$/;"	v
+ovmax	src/objectDetection/eval.py	/^                ovmax = np.max(overlaps)$/;"	v
+ovmax	src/objectDetection/eval.py	/^            ovmax = -np.inf$/;"	v
 parent	src/path/vertex.py	/^    def parent(self):$/;"	m	class:Vertex
+parse_rec	src/objectDetection/eval.py	/^def parse_rec(filename):$/;"	f
+parser	src/objectDetection/demo/live.py	/^parser = argparse.ArgumentParser(description='Single Shot MultiBox Detection')$/;"	v
+parser	src/objectDetection/eval.py	/^parser = argparse.ArgumentParser($/;"	v
+parser	src/objectDetection/test.py	/^parser = argparse.ArgumentParser(description='Single Shot MultiBox Detection')$/;"	v
+parser	src/objectDetection/train.py	/^parser = argparse.ArgumentParser($/;"	v
 pathMgr	src/main.py	/^pathMgr = PathMgr()$/;"	v
 pointG	src/segmentation.py	/^pointG = (0, 255 , 0)$/;"	v
 pointR	src/segmentation.py	/^pointR = (0, 0 , 255)$/;"	v
 pointY	src/segmentation.py	/^pointY = (0, 255 , 255)$/;"	v
+point_form	src/objectDetection/layers/box_utils.py	/^def point_form(boxes):$/;"	f
+prec	src/objectDetection/eval.py	/^        prec = -1.$/;"	v
+prec	src/objectDetection/eval.py	/^        prec = tp \/ np.maximum(tp + fp, np.finfo(np.float64).eps)$/;"	v
+predict	src/objectDetection/demo/live.py	/^    def predict(frame):$/;"	f	function:cv2_demo
 prev	src/path/vertex.py	/^    def prev(self):$/;"	m	class:Vertex
 print	src/path/graph.py	/^    def print(self):$/;"	m	class:Graph
+pull_anno	src/objectDetection/data/coco.py	/^    def pull_anno(self, index):$/;"	m	class:COCODetection
+pull_anno	src/objectDetection/data/voc0712.py	/^    def pull_anno(self, index):$/;"	m	class:VOCDetection
+pull_image	src/objectDetection/data/coco.py	/^    def pull_image(self, index):$/;"	m	class:COCODetection
+pull_image	src/objectDetection/data/voc0712.py	/^    def pull_image(self, index):$/;"	m	class:VOCDetection
+pull_item	src/objectDetection/data/coco.py	/^    def pull_item(self, index):$/;"	m	class:COCODetection
+pull_item	src/objectDetection/data/voc0712.py	/^    def pull_item(self, index):$/;"	m	class:VOCDetection
+pull_tensor	src/objectDetection/data/voc0712.py	/^    def pull_tensor(self, index):$/;"	m	class:VOCDetection
 query	src/rpi/__init__.py	/^    def query(self):$/;"	m	class:Rpi
+rec	src/objectDetection/eval.py	/^        rec = -1.$/;"	v
+rec	src/objectDetection/eval.py	/^        rec = tp \/ float(npos)$/;"	v
+recs	src/objectDetection/eval.py	/^            recs = pickle.load(f)$/;"	v
+recs	src/objectDetection/eval.py	/^        recs = {}$/;"	v
 res	src/segmentation.py	/^res = np.sum(abs(arrayR - img), axis = 2) < disR$/;"	v
 res	src/segmentation.py	/^res = res * 255$/;"	v
+reset_parameters	src/objectDetection/layers/modules/l2norm.py	/^    def reset_parameters(self):$/;"	m	class:L2Norm
 rpi	src/rpi.py	/^rpi = Rpi()$/;"	v
+saveName	src/objectDetection/preprocess/jsonParser.py	/^    saveName = os.path.join(XML_PATH, fname + '.xml')$/;"	v
 setDirect	src/path/vertex.py	/^    def setDirect(self, locate):$/;"	m	class:Vertex
 setGraph	src/objectDetection/__init__.py	/^    def setGraph(self, image, graph):$/;"	m	class:ObjectDetectionMgr
 setGraph	src/segmentation/__init__.py	/^    def setGraph(self, image, graph):$/;"	m	class:SegmentationMgr
@@ -74,10 +343,42 @@ setVertex	src/path/graph.py	/^    def setVertex(self):$/;"	m	class:Graph
 setWeight	src/path/edge.py	/^    def setWeight(self, w):$/;"	m	class:Edge
 setX	src/path/edge.py	/^    def setX(self, x1, x2):$/;"	m	class:Edge
 setY	src/path/edge.py	/^    def setY(self, y1, y2):$/;"	m	class:Edge
+set_type	src/objectDetection/eval.py	/^set_type = 'test'$/;"	v
 simpleInit	src/path/graph.py	/^    def simpleInit(self):$/;"	m	class:Graph
 singleSourceShortestPath	src/path/graph.py	/^    def singleSourceShortestPath(self, i): $/;"	m	class:Graph
+single_ann	src/objectDetection/preprocess/jsonParser.py	/^    single_ann = []$/;"	v
 smallest	src/path/bheap.py	/^    def smallest(self):$/;"	m	class:BHeap
 solve	src/path/__init__.py	/^    def solve(self):$/;"	m	class:PathMgr
 solve	src/path/graph.py	/^    def solve(self):$/;"	m	class:Graph
+sorted_ind	src/objectDetection/eval.py	/^        sorted_ind = np.argsort(-confidence)$/;"	v
+sorted_scores	src/objectDetection/eval.py	/^        sorted_scores = np.sort(-confidence)$/;"	v
+splitlines	src/objectDetection/eval.py	/^        splitlines = [x.strip().split(' ') for x in lines]$/;"	v
+stm	src/graph.py	/^stm = Stm()$/;"	v
+stm	src/stm.py	/^stm = Stm()$/;"	v
+str2bool	src/objectDetection/eval.py	/^def str2bool(v):$/;"	f
+str2bool	src/objectDetection/train.py	/^def str2bool(v):$/;"	f
+test_net	src/objectDetection/eval.py	/^def test_net(save_folder, net, cuda, dataset, transform, top_k,$/;"	f
+test_net	src/objectDetection/test.py	/^def test_net(save_folder, net, cuda, testset, transform, thresh):$/;"	f
+test_voc	src/objectDetection/test.py	/^def test_voc():$/;"	f
+tic	src/objectDetection/eval.py	/^    def tic(self):$/;"	m	class:Timer
+toc	src/objectDetection/eval.py	/^    def toc(self, average=True):$/;"	m	class:Timer
+total	src/objectDetection/preprocess/toJson.py	/^total = {}$/;"	v
+total_annotation	src/objectDetection/preprocess/jsonParser.py	/^total_annotation = {}$/;"	v
+tp	src/objectDetection/eval.py	/^        tp = np.cumsum(tp)$/;"	v
+tp	src/objectDetection/eval.py	/^        tp = np.zeros(nd)$/;"	v
+train	src/objectDetection/train.py	/^def train():$/;"	f
+train_anno	src/objectDetection/preprocess/jsonParser.py	/^train_anno = args.anno_path$/;"	v
+train_set	src/objectDetection/train.py	/^train_set = parser.add_mutually_exclusive_group()$/;"	v
+uni	src/objectDetection/eval.py	/^                uni = ((bb[2] - bb[0]) * (bb[3] - bb[1]) +$/;"	v
+update_vis_plot	src/objectDetection/train.py	/^def update_vis_plot(iteration, loc, conf, window1, window2, update_type,$/;"	f
 vertex	src/path/edge.py	/^    def vertex(self):$/;"	m	class:Edge
+vertexL	src/path/graph.py	/^    def vertexL(self):$/;"	m	class:Graph
+vgg	src/objectDetection/ssd.py	/^def vgg(cfg, i, batch_norm=False):$/;"	f
+voc	src/objectDetection/data/config.py	/^voc = {$/;"	v
+voc_ap	src/objectDetection/eval.py	/^def voc_ap(rec, prec, use_07_metric=True):$/;"	f
+voc_eval	src/objectDetection/eval.py	/^def voc_eval(detpath,$/;"	f
 weight	src/path/edge.py	/^    def weight(self):$/;"	m	class:Edge
+weights_init	src/objectDetection/train.py	/^def weights_init(m):$/;"	f
+writeXMLFile	src/objectDetection/preprocess/xmlGenerator.py	/^def writeXMLFile(doc, filename):$/;"	f
+write_voc_results_file	src/objectDetection/eval.py	/^def write_voc_results_file(all_boxes, dataset):$/;"	f
+xavier	src/objectDetection/train.py	/^def xavier(param):$/;"	f

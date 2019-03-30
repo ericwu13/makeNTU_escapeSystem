@@ -30,6 +30,8 @@ class Vertex:
         return self._prev
     def parent(self):
         return self._parent
+    def direct(self):
+        return self._direct
     def isLight(self):
         return self._light
     def initializeSSSP(self, n):
