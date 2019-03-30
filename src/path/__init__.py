@@ -16,8 +16,5 @@ class PathMgr:
         #  while True:
         image = self._rpi.query()
         self._objectDetectionMgr.setGraph(image, self._graph)
+        self._graph.solve()
         self._stm.configure(self._graph)
-
-
-
-    
