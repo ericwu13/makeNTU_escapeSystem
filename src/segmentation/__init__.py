@@ -1,5 +1,5 @@
 
-import misc
+from misc import *
 
 
 class SegmentationMgr:

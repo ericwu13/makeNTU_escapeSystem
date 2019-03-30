@@ -1,11 +1,11 @@
 
 
-import misc
+from misc import *
 
 class Stm:
     def __init__(self):
         pass
-    def cofigure(self, vertexDir):
+    def configure(self, graph):
         pass
 
     

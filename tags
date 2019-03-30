@@ -4,21 +4,38 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DOWN	src/path/vertex.py	/^    DOWN = 1$/;"	v	class:Direction
+Direction	src/path/vertex.py	/^class Direction(Enum):$/;"	c
+Edge	src/path/edge.py	/^class Edge:$/;"	c
 Graph	src/path/graph.py	/^class Graph:$/;"	c
+LEFT	src/path/vertex.py	/^    LEFT = 3$/;"	v	class:Direction
+NONE	src/path/vertex.py	/^    NONE = 4$/;"	v	class:Direction
 ObjectDetectionMgr	src/objectDetection/__init__.py	/^class ObjectDetectionMgr:$/;"	c
 PathMgr	src/path/__init__.py	/^class PathMgr:$/;"	c
+RIGHT	src/path/vertex.py	/^    RIGHT = 2$/;"	v	class:Direction
 Rpi	src/rpi/__init__.py	/^class Rpi:$/;"	c
 SegmentationMgr	src/segmentation/__init__.py	/^class SegmentationMgr:$/;"	c
 Stm	src/stm/__init__.py	/^class Stm:$/;"	c
+UP	src/path/vertex.py	/^    UP = 0$/;"	v	class:Direction
+Vertex	src/path/vertex.py	/^class Vertex:$/;"	c
 __init__	src/objectDetection/__init__.py	/^    def __init__(self):$/;"	m	class:ObjectDetectionMgr
 __init__	src/path/__init__.py	/^    def __init__(self):$/;"	m	class:PathMgr
+__init__	src/path/edge.py	/^    def __init__(self):$/;"	m	class:Edge
 __init__	src/path/graph.py	/^    def __init__(self):$/;"	m	class:Graph
+__init__	src/path/vertex.py	/^    def __init__(self):$/;"	m	class:Vertex
 __init__	src/rpi/__init__.py	/^    def __init__(self):$/;"	m	class:Rpi
 __init__	src/segmentation/__init__.py	/^    def __init__(self):$/;"	m	class:SegmentationMgr
 __init__	src/stm/__init__.py	/^    def __init__(self):$/;"	m	class:Stm
-cofigure	src/stm/__init__.py	/^    def cofigure(self, vertexDir):$/;"	m	class:Stm
+addEdge	src/path/vertex.py	/^    def addEdge(self, i):$/;"	m	class:Vertex
+addVertex	src/path/edge.py	/^    def addVertex(self, i):$/;"	m	class:Edge
+configure	src/stm/__init__.py	/^    def configure(self, graph):$/;"	m	class:Stm
+initEdge	src/path/graph.py	/^    def initEdge(self):$/;"	m	class:Graph
+initVertex	src/path/graph.py	/^    def initVertex(self):$/;"	m	class:Graph
 pathMgr	src/main.py	/^pathMgr = PathMgr()$/;"	v
 query	src/rpi/__init__.py	/^    def query(self):$/;"	m	class:Rpi
 setGraph	src/objectDetection/__init__.py	/^    def setGraph(self, image, graph):$/;"	m	class:ObjectDetectionMgr
 setGraph	src/segmentation/__init__.py	/^    def setGraph(self, image, graph):$/;"	m	class:SegmentationMgr
+setLocation	src/path/vertex.py	/^    def setLocation(self, x, y):$/;"	m	class:Vertex
+setX	src/path/edge.py	/^    def setX(self, x1, x2):$/;"	m	class:Edge
+setY	src/path/edge.py	/^    def setY(self, y1, y2):$/;"	m	class:Edge
 solve	src/path/__init__.py	/^    def solve(self):$/;"	m	class:PathMgr
