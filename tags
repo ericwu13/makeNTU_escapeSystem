@@ -17,6 +17,7 @@ __init__	src/rpi/__init__.py	/^    def __init__(self):$/;"	m	class:Rpi
 __init__	src/segmentation/__init__.py	/^    def __init__(self):$/;"	m	class:SegmentationMgr
 __init__	src/stm/__init__.py	/^    def __init__(self):$/;"	m	class:Stm
 cofigure	src/stm/__init__.py	/^    def cofigure(self, vertexDir):$/;"	m	class:Stm
+pathMgr	src/main.py	/^pathMgr = PathMgr()$/;"	v
 query	src/rpi/__init__.py	/^    def query(self):$/;"	m	class:Rpi
 setGraph	src/objectDetection/__init__.py	/^    def setGraph(self, image, graph):$/;"	m	class:SegmentationMgr
 setGraph	src/segmentation/__init__.py	/^    def setGraph(self, image, graph):$/;"	m	class:SegmentationMgr
