@@ -5,12 +5,12 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 Graph	src/path/graph.py	/^class Graph:$/;"	c
+ObjectDetectionMgr	src/objectDetection/__init__.py	/^class ObjectDetectionMgr:$/;"	c
 PathMgr	src/path/__init__.py	/^class PathMgr:$/;"	c
 Rpi	src/rpi/__init__.py	/^class Rpi:$/;"	c
-SegmentationMgr	src/objectDetection/__init__.py	/^class SegmentationMgr:$/;"	c
 SegmentationMgr	src/segmentation/__init__.py	/^class SegmentationMgr:$/;"	c
 Stm	src/stm/__init__.py	/^class Stm:$/;"	c
-__init__	src/objectDetection/__init__.py	/^    def __init__(self):$/;"	m	class:SegmentationMgr
+__init__	src/objectDetection/__init__.py	/^    def __init__(self):$/;"	m	class:ObjectDetectionMgr
 __init__	src/path/__init__.py	/^    def __init__(self):$/;"	m	class:PathMgr
 __init__	src/path/graph.py	/^    def __init__(self):$/;"	m	class:Graph
 __init__	src/rpi/__init__.py	/^    def __init__(self):$/;"	m	class:Rpi
@@ -19,5 +19,6 @@ __init__	src/stm/__init__.py	/^    def __init__(self):$/;"	m	class:Stm
 cofigure	src/stm/__init__.py	/^    def cofigure(self, vertexDir):$/;"	m	class:Stm
 pathMgr	src/main.py	/^pathMgr = PathMgr()$/;"	v
 query	src/rpi/__init__.py	/^    def query(self):$/;"	m	class:Rpi
-setGraph	src/objectDetection/__init__.py	/^    def setGraph(self, image, graph):$/;"	m	class:SegmentationMgr
+setGraph	src/objectDetection/__init__.py	/^    def setGraph(self, image, graph):$/;"	m	class:ObjectDetectionMgr
 setGraph	src/segmentation/__init__.py	/^    def setGraph(self, image, graph):$/;"	m	class:SegmentationMgr
+solve	src/path/__init__.py	/^    def solve(self):$/;"	m	class:PathMgr

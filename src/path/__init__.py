@@ -8,8 +8,12 @@ from stm import *
 
 class PathMgr:
     def __init__(self):
+        _rpi = Rpi()
+        _stm = Stm()
         _graph = Graph()
-        pass
+        _objectDetection = ObjectDetectionMgr()
+    def solve(self):
+        image = 
 
 
 
