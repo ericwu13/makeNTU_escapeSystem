@@ -12,6 +12,10 @@ class Edge:
         return self._id
     def vertex(self):
         return self._vertex
+    def xRange(self):
+        return self._xRange
+    def yRange(self):
+        return self._yRange
     def otherVertex(self, i):
         if (self._vertex[0] == i):
             return self._vertex[1]

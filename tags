@@ -139,7 +139,7 @@ __init__	src/path/edge.py	/^    def __init__(self, i):$/;"	m	class:Edge
 __init__	src/path/graph.py	/^    def __init__(self):$/;"	m	class:Graph
 __init__	src/path/vertex.py	/^    def __init__(self, i):$/;"	m	class:Vertex
 __init__	src/rpi/__init__.py	/^    def __init__(self):$/;"	m	class:Rpi
-__init__	src/segmentation/__init__.py	/^    def __init__(self):$/;"	m	class:SegmentationMgr
+__init__	src/segmentation/__init__.py	/^    def __init__(self, size = (320, 640)):$/;"	m	class:SegmentationMgr
 __init__	src/stm/__init__.py	/^    def __init__(self):$/;"	m	class:Stm
 __len__	src/objectDetection/data/coco.py	/^    def __len__(self):$/;"	m	class:COCODetection	file:
 __len__	src/objectDetection/data/voc0712.py	/^    def __len__(self):$/;"	m	class:VOCDetection	file:
@@ -250,6 +250,7 @@ id	src/path/edge.py	/^    def id(self):$/;"	m	class:Edge
 id	src/path/vertex.py	/^    def id(self):$/;"	m	class:Vertex
 idx	src/objectDetection/preprocess/jsonParser.py	/^    idx = a['category_id']-1$/;"	v
 ih	src/objectDetection/eval.py	/^                ih = np.maximum(iymax - iymin, 0.)$/;"	v
+image	src/graph.py	/^image = cv2.imread('..\/data\/data1.jpg')$/;"	v
 imageDict	src/objectDetection/preprocess/jsonParser.py	/^imageDict = {}$/;"	v
 image_id	src/objectDetection/preprocess/toJson.py	/^image_id = 0$/;"	v
 image_ids	src/objectDetection/eval.py	/^        image_ids = [image_ids[x] for x in sorted_ind]$/;"	v
@@ -333,6 +334,7 @@ res	src/segmentation.py	/^res = res * 255$/;"	v
 reset_parameters	src/objectDetection/layers/modules/l2norm.py	/^    def reset_parameters(self):$/;"	m	class:L2Norm
 rpi	src/rpi.py	/^rpi = Rpi()$/;"	v
 saveName	src/objectDetection/preprocess/jsonParser.py	/^    saveName = os.path.join(XML_PATH, fname + '.xml')$/;"	v
+segmentationMgr	src/graph.py	/^segmentationMgr = SegmentationMgr()$/;"	v
 setDirect	src/path/vertex.py	/^    def setDirect(self, locate):$/;"	m	class:Vertex
 setGraph	src/objectDetection/__init__.py	/^    def setGraph(self, image, graph):$/;"	m	class:ObjectDetectionMgr
 setGraph	src/segmentation/__init__.py	/^    def setGraph(self, image, graph):$/;"	m	class:SegmentationMgr
@@ -353,8 +355,6 @@ solve	src/path/graph.py	/^    def solve(self):$/;"	m	class:Graph
 sorted_ind	src/objectDetection/eval.py	/^        sorted_ind = np.argsort(-confidence)$/;"	v
 sorted_scores	src/objectDetection/eval.py	/^        sorted_scores = np.sort(-confidence)$/;"	v
 splitlines	src/objectDetection/eval.py	/^        splitlines = [x.strip().split(' ') for x in lines]$/;"	v
-stm	src/graph.py	/^stm = Stm()$/;"	v
-stm	src/stm.py	/^stm = Stm()$/;"	v
 str2bool	src/objectDetection/eval.py	/^def str2bool(v):$/;"	f
 str2bool	src/objectDetection/train.py	/^def str2bool(v):$/;"	f
 test_net	src/objectDetection/eval.py	/^def test_net(save_folder, net, cuda, dataset, transform, top_k,$/;"	f
@@ -381,4 +381,6 @@ weight	src/path/edge.py	/^    def weight(self):$/;"	m	class:Edge
 weights_init	src/objectDetection/train.py	/^def weights_init(m):$/;"	f
 writeXMLFile	src/objectDetection/preprocess/xmlGenerator.py	/^def writeXMLFile(doc, filename):$/;"	f
 write_voc_results_file	src/objectDetection/eval.py	/^def write_voc_results_file(all_boxes, dataset):$/;"	f
+xRange	src/path/edge.py	/^    def xRange(self):$/;"	m	class:Edge
 xavier	src/objectDetection/train.py	/^def xavier(param):$/;"	f
+yRange	src/path/edge.py	/^    def yRange(self):$/;"	m	class:Edge

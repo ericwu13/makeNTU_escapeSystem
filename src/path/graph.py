@@ -8,7 +8,7 @@ class Graph:
     def __init__(self):
         self.initEdge()
         self.setVertex()
-        self.simpleInit()
+        #  self.simpleInit()
         self._terminal = [16, 17, 18];
         self._lightThreshold = 2
     def vertexL(self):
@@ -60,6 +60,9 @@ class Graph:
         self._edgeL[22].setVertex(7,13)
         self._edgeL[23].setVertex(7,10)
         self._edgeL[24].setVertex(10,14)
+        for e in self._edgeL:
+            e.setX(0, 160)
+            e.setY(0, 320)
 
     def simpleInit(self):
         for e in self._edgeL:
@@ -125,16 +128,17 @@ class Graph:
                 v = self._vertexL[v].parent()
 
     def print(self):
-        print("VERTEX:")
-        for v in self._vertexL:
-            print("  id: {}".format(v.id()))
-            #  print("    edge: {}".format(v.edgeL()))
-            print("    parent: {}".format(v.parent()))
-            print("    isLight: {}".format(v.isLight()))
+        #  print("VERTEX:")
+        #  for v in self._vertexL:
+        #      print("  id: {}".format(v.id()))
+        #      #  print("    edge: {}".format(v.edgeL()))
+        #      print("    parent: {}".format(v.parent()))
+        #      print("    isLight: {}".format(v.isLight()))
             #  print("    dist: {}".format(v.dist()))
             #  print("    prev: {}".format(v.prev()))
-        #  print("EDGE:\n")
-        #  for e in self._edgeL:
-        #      print("  id: {}".format(e.id()))
-        #      print("    vertex: {}".format(e.vertex()))
+        print("EDGE:")
+        for e in self._edgeL:
+            print("  id: {}".format(e.id()))
+            #  print("    vertex: {}".format(e.vertex()))
+            print("    weight: {}".format(e.weight()))
 
