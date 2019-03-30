@@ -1,9 +1,10 @@
 
 import misc
-import objectDetection
-import rpi
-import segmentation
-import stm
+from path.graph import *
+from objectDetection import *
+from rpi import *
+from segmentation import *
+from stm import *
 
 class PathMgr:
     def __init__(self):

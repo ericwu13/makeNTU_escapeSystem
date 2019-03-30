@@ -1,4 +1,4 @@
 
-import path
+from path import *
 
 pathMgr = PathMgr()
