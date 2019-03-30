@@ -9,7 +9,8 @@ class Direction(Enum):
     NONE = 4
 
 class Vertex:
-    def __init__(self):
+    def __init__(self, i):
+        self._id = i
         self._edgeL = []
         self._loaction = [0,0]
         self._direct = Direction.NONE
@@ -18,3 +19,7 @@ class Vertex:
         self._loaction = [x,y]
     def addEdge(self, i):
         self._edgeL.append(i)
+    def getID(self):
+        return self._id
+    def edgeL(self):
+        return self._edgeL

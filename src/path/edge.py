@@ -13,3 +13,5 @@ class Edge:
         self._xRange = [x1,x2]
     def setY(self, y1, y2):
         self._yRange = [y1,y2]
+    def weight(self):
+        return _weight
