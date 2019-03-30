@@ -1,11 +1,17 @@
 
 from misc import *
+import picamera
 
 class Rpi:
     def __init__(self):
-        pass
+        self._camera = picamera.PiCamera()
+        self._camera.resolution = (640, 320) 
+        self._stream = io.BytesIO()
     def query(self):
-        return np.array([])
+        self._camera.capture(self._stream, format='jpeg')
+        data = np.fromstring(self._stream.getvalue(), dtype=np.uint8)
+        image = cv2.imdecode(data, 1)
+        return image
 
     
 

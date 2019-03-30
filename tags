@@ -28,11 +28,23 @@ __init__	src/segmentation/__init__.py	/^    def __init__(self):$/;"	m	class:Segm
 __init__	src/stm/__init__.py	/^    def __init__(self):$/;"	m	class:Stm
 addEdge	src/path/vertex.py	/^    def addEdge(self, i):$/;"	m	class:Vertex
 addVertex	src/path/edge.py	/^    def addVertex(self, i):$/;"	m	class:Edge
+arrayG	src/segmentation.py	/^arrayG = np.array([[pointG for i in range(640)] for j in range(320)])$/;"	v
+arrayR	src/segmentation.py	/^arrayR = np.array([[pointR for i in range(640)] for j in range(320)])$/;"	v
+arrayY	src/segmentation.py	/^arrayY = np.array([[pointY for i in range(640)] for j in range(320)])$/;"	v
 configure	src/stm/__init__.py	/^    def configure(self, graph):$/;"	m	class:Stm
+disG	src/segmentation.py	/^disG = 280$/;"	v
+disR	src/segmentation.py	/^disR = 250$/;"	v
+disY	src/segmentation.py	/^disY = 350$/;"	v
+img	src/segmentation.py	/^img = cv2.imread('..\/data\/data3.jpg')$/;"	v
 initEdge	src/path/graph.py	/^    def initEdge(self):$/;"	m	class:Graph
 initVertex	src/path/graph.py	/^    def initVertex(self):$/;"	m	class:Graph
 pathMgr	src/main.py	/^pathMgr = PathMgr()$/;"	v
+pointG	src/segmentation.py	/^pointG = (0, 255 , 0)$/;"	v
+pointR	src/segmentation.py	/^pointR = (0, 0 , 255)$/;"	v
+pointY	src/segmentation.py	/^pointY = (0, 255 , 255)$/;"	v
 query	src/rpi/__init__.py	/^    def query(self):$/;"	m	class:Rpi
+res	src/segmentation.py	/^res = np.sum(abs(arrayR - img), axis = 2) < disR$/;"	v
+res	src/segmentation.py	/^res = res * 255$/;"	v
 setGraph	src/objectDetection/__init__.py	/^    def setGraph(self, image, graph):$/;"	m	class:ObjectDetectionMgr
 setGraph	src/segmentation/__init__.py	/^    def setGraph(self, image, graph):$/;"	m	class:SegmentationMgr
 setLocation	src/path/vertex.py	/^    def setLocation(self, x, y):$/;"	m	class:Vertex
