@@ -1,4 +1,5 @@
 
+import misc
 
 class Rpi:
     def __init__(self):
