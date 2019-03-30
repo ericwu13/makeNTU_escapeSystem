@@ -45,6 +45,7 @@ pointY	src/segmentation.py	/^pointY = (0, 255 , 255)$/;"	v
 query	src/rpi/__init__.py	/^    def query(self):$/;"	m	class:Rpi
 res	src/segmentation.py	/^res = np.sum(abs(arrayR - img), axis = 2) < disR$/;"	v
 res	src/segmentation.py	/^res = res * 255$/;"	v
+rpi	src/rpi.py	/^rpi = Rpi()$/;"	v
 setGraph	src/objectDetection/__init__.py	/^    def setGraph(self, image, graph):$/;"	m	class:ObjectDetectionMgr
 setGraph	src/segmentation/__init__.py	/^    def setGraph(self, image, graph):$/;"	m	class:SegmentationMgr
 setLocation	src/path/vertex.py	/^    def setLocation(self, x, y):$/;"	m	class:Vertex
