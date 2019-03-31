@@ -335,6 +335,7 @@ rpi	src/rpi.py	/^rpi = Rpi()$/;"	v
 saveName	src/objectDetection/preprocess/jsonParser.py	/^    saveName = os.path.join(XML_PATH, fname + '.xml')$/;"	v
 setDirect	src/path/vertex.py	/^    def setDirect(self, locate):$/;"	m	class:Vertex
 setGraph	src/objectDetection/__init__.py	/^    def setGraph(self, image, graph):$/;"	m	class:ObjectDetectionMgr
+setGraph	src/path/__init__.py	/^    def setGraph(self, image, data):$/;"	m	class:PathMgr
 setGraph	src/segmentation/__init__.py	/^    def setGraph(self, image, graph):$/;"	m	class:SegmentationMgr
 setLocation	src/path/vertex.py	/^    def setLocation(self, x, y):$/;"	m	class:Vertex
 setParent	src/path/vertex.py	/^    def setParent(self, id):$/;"	m	class:Vertex
