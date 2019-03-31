@@ -130,6 +130,7 @@ class Graph:
 
     def updateEdge(self, data):
         point = np.zeros((640, 320))
+        print(point.shape())
         point[data] = 1
         print(point.shape())
         for e in self._edgeL:
