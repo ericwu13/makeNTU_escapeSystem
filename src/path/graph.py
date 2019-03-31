@@ -8,7 +8,7 @@ class Graph:
     def __init__(self):
         self.initEdge()
         self.setVertex()
-        self.simpleInit()
+        #  self.simpleInit()
         self._terminal = [16, 17, 18];
         self._lightThreshold = 2
     def vertexL(self):
@@ -132,7 +132,7 @@ class Graph:
         point = np.zeros((640, 320))
         print(point.shape)
         print(data)
-        point[data] = 1
+        data[point] = 1
         print(point[282,94])
         print(point[282,95])
         print(point[295,44])
@@ -140,6 +140,8 @@ class Graph:
         print(point.shape)
         for e in self._edgeL:
             e.setWeight(np.sum(point[e.xRange()[0]:e.xRange()[1], e.yRange()[0]: e.yRange()[1]]))
+            print(e.id())
+            print(np.sum(point[e.xRange()[0]:e.xRange()[1], e.yRange()[0]: e.yRange()[1]]))
     def simpleInit(self):
         for e in self._edgeL:
             e.setWeight(1)
