@@ -13,6 +13,8 @@ class Stm:
             v = graph.vertexL()[i]
             if (v.isLight()):
                 self._serial.write("{}\n".format(v.direct().value).encode())
+                print(v.direct().value)
             else:
                 self._serial.write("{}\n".format(Direction.NONE.value).encode())
+                print(Direction.NONE.value)
         #  self._serial.write("\n".encode())
