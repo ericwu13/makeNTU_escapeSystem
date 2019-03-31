@@ -13,3 +13,6 @@ stm = Stm()
 stm.configure(graph)
 
 
+while True:
+    string = stm._serial.readline()
+    print(string)
