@@ -259,7 +259,7 @@ imagenames	src/objectDetection/eval.py	/^    imagenames = [x.strip() for x in li
 images	src/objectDetection/preprocess/jsonParser.py	/^    images = data['images']$/;"	v
 images	src/objectDetection/preprocess/toJson.py	/^images = []$/;"	v
 img	src/objectDetection/preprocess/jsonParser.py	/^img = imread(images[0])$/;"	v
-img	src/segmentation.py	/^img = cv2.imread('..\/data\/data3.jpg')$/;"	v
+img	src/segmentation.py	/^img = cv2.imread('..\/data\/data7.jpg')$/;"	v
 imgpath	src/objectDetection/eval.py	/^imgpath = os.path.join(args.voc_root, 'VOC2007', 'JPEGImages', '%s.jpg')$/;"	v
 imgsetpath	src/objectDetection/eval.py	/^imgsetpath = os.path.join(args.voc_root, 'VOC2007', 'ImageSets',$/;"	v
 initEdge	src/path/graph.py	/^    def initEdge(self):$/;"	m	class:Graph
@@ -353,6 +353,7 @@ solve	src/path/graph.py	/^    def solve(self):$/;"	m	class:Graph
 sorted_ind	src/objectDetection/eval.py	/^        sorted_ind = np.argsort(-confidence)$/;"	v
 sorted_scores	src/objectDetection/eval.py	/^        sorted_scores = np.sort(-confidence)$/;"	v
 splitlines	src/objectDetection/eval.py	/^        splitlines = [x.strip().split(' ') for x in lines]$/;"	v
+stm	src/graph.py	/^stm = Stm()$/;"	v
 str2bool	src/objectDetection/eval.py	/^def str2bool(v):$/;"	f
 str2bool	src/objectDetection/train.py	/^def str2bool(v):$/;"	f
 test_net	src/objectDetection/eval.py	/^def test_net(save_folder, net, cuda, dataset, transform, top_k,$/;"	f

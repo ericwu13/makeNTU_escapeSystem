@@ -8,8 +8,8 @@ graph = Graph()
 #  image = cv2.imread('../data/data1.jpg')
 #  segmentationMgr.setGraph(image, graph)
 graph.solve()
-graph.print()
-#  stm = Stm()
-#  stm.configure(graph)
+#  graph.print()
+stm = Stm()
+stm.configure(graph)
 
 

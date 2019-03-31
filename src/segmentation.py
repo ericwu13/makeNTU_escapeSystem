@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 from segmentation import *
 
-img = cv2.imread('../data/data3.jpg')
+img = cv2.imread('../data/data7.jpg')
 #  cv2.waitKey(0)
 #  cv2.destroyAllWindows()
 #  print(img)
