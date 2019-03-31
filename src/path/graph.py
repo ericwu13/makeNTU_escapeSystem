@@ -133,7 +133,7 @@ class Graph:
         print(point.shape)
         print(data)
         for i in data:
-            point[i] = 1
+            point[i[0], i[1]] = 1
         #  point[data] += 1
         print(point[282,94])
         print(point[282,95])
