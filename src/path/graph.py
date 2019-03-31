@@ -130,20 +130,19 @@ class Graph:
 
     def updateEdge(self, data):
         point = np.zeros((640, 320))
-        print(point.shape)
-        print(data)
-        #  for i in data:
-        #      point[i[0], i[1]] = 1
-        point[data.T] += 1
-        print(point[282,94])
-        print(point[282,95])
-        print(point[295,44])
-        print(point[295,45])
-        print(point.shape)
+        #  print(point.shape)
+        #  print(data)
+        for i in data:
+            point[i[0], i[1]] = 1
+        #  print(point[282,94])
+        #  print(point[282,95])
+        #  print(point[295,44])
+        #  print(point[295,45])
+        #  print(point.shape)
         for e in self._edgeL:
             e.setWeight(np.sum(point[e.xRange()[0]:e.xRange()[1], e.yRange()[0]: e.yRange()[1]]))
-            print(e.id())
-            print(np.sum(point[e.xRange()[0]:e.xRange()[1], e.yRange()[0]: e.yRange()[1]]))
+            #  print(e.id())
+            #  print(np.sum(point[e.xRange()[0]:e.xRange()[1], e.yRange()[0]: e.yRange()[1]]))
     def simpleInit(self):
         for e in self._edgeL:
             e.setWeight(1)
