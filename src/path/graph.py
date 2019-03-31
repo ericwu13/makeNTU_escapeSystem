@@ -130,9 +130,9 @@ class Graph:
 
     def updateEdge(self, data):
         point = np.zeros((640, 320))
-        print(point.shape)
+        #  print(point.shape)
         point[data] = 1
-        print(point.shape)
+        #  print(point.shape)
         for e in self._edgeL:
             e.setWeight(np.sum(point[e.xRange()[0]:e.xRange()[1], e.yRange()[0]: e.yRange()[1]]))
     def simpleInit(self):
@@ -199,18 +199,18 @@ class Graph:
                 v = self._vertexL[v].parent()
 
     def print(self):
-        print("VERTEX:")
-        for v in self._vertexL:
-            print("  id: {}".format(v.id()))
+        #  print("VERTEX:")
+        #  for v in self._vertexL:
+        #      print("  id: {}".format(v.id()))
             #  print("    edge: {}".format(v.edgeL()))
-            print("    parent: {}".format(v.parent()))
-            print("    direct: {}".format(v.direct()))
-            print("    isLight: {}".format(v.isLight()))
+            #  print("    parent: {}".format(v.parent()))
+            #  print("    direct: {}".format(v.direct()))
+            #  print("    isLight: {}".format(v.isLight()))
             #  print("    dist: {}".format(v.dist()))
             #  print("    prev: {}".format(v.prev()))
-        #  print("EDGE:")
-        #  for e in self._edgeL:
-        #      print("  id: {}".format(e.id()))
-        #      #  print("    vertex: {}".format(e.vertex()))
-        #      print("    weight: {}".format(e.weight()))
+        print("EDGE:")
+        for e in self._edgeL:
+            print("  id: {}".format(e.id()))
+            #  print("    vertex: {}".format(e.vertex()))
+            print("    weight: {}".format(e.weight()))
 
