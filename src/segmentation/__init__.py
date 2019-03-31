@@ -19,6 +19,8 @@ class SegmentationMgr:
         res |= np.sum(abs(self._arrayY - image), axis = 2) < self._disY
         #  res = res * 255
         for e in graph.edgeL():
+            #  print(e.xRange())
+            #  print(e.yRange())
             e.setWeight(np.sum(res[e.xRange()[0]:e.xRange()[1], e.yRange()[0]: e.yRange()[1]]))
 
     

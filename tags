@@ -250,7 +250,6 @@ id	src/path/edge.py	/^    def id(self):$/;"	m	class:Edge
 id	src/path/vertex.py	/^    def id(self):$/;"	m	class:Vertex
 idx	src/objectDetection/preprocess/jsonParser.py	/^    idx = a['category_id']-1$/;"	v
 ih	src/objectDetection/eval.py	/^                ih = np.maximum(iymax - iymin, 0.)$/;"	v
-image	src/graph.py	/^image = cv2.imread('..\/data\/data1.jpg')$/;"	v
 imageDict	src/objectDetection/preprocess/jsonParser.py	/^imageDict = {}$/;"	v
 image_id	src/objectDetection/preprocess/toJson.py	/^image_id = 0$/;"	v
 image_ids	src/objectDetection/eval.py	/^        image_ids = [image_ids[x] for x in sorted_ind]$/;"	v
@@ -334,7 +333,6 @@ res	src/segmentation.py	/^res = res * 255$/;"	v
 reset_parameters	src/objectDetection/layers/modules/l2norm.py	/^    def reset_parameters(self):$/;"	m	class:L2Norm
 rpi	src/rpi.py	/^rpi = Rpi()$/;"	v
 saveName	src/objectDetection/preprocess/jsonParser.py	/^    saveName = os.path.join(XML_PATH, fname + '.xml')$/;"	v
-segmentationMgr	src/graph.py	/^segmentationMgr = SegmentationMgr()$/;"	v
 setDirect	src/path/vertex.py	/^    def setDirect(self, locate):$/;"	m	class:Vertex
 setGraph	src/objectDetection/__init__.py	/^    def setGraph(self, image, graph):$/;"	m	class:ObjectDetectionMgr
 setGraph	src/segmentation/__init__.py	/^    def setGraph(self, image, graph):$/;"	m	class:SegmentationMgr
