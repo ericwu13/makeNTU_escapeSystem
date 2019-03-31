@@ -133,6 +133,10 @@ class Graph:
         print(point.shape)
         print(data)
         point[data] = 1
+        print(point[282,94])
+        print(point[282,95])
+        print(point[295,44])
+        print(point[295,45])
         print(point.shape)
         for e in self._edgeL:
             e.setWeight(np.sum(point[e.xRange()[0]:e.xRange()[1], e.yRange()[0]: e.yRange()[1]]))
