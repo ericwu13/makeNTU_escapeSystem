@@ -35,6 +35,7 @@ arrayG	src/segmentation.py	/^arrayG = np.array([[pointG for i in range(640)] for
 arrayR	src/segmentation.py	/^arrayR = np.array([[pointR for i in range(640)] for j in range(320)])$/;"	v
 arrayY	src/segmentation.py	/^arrayY = np.array([[pointY for i in range(640)] for j in range(320)])$/;"	v
 configure	src/stm/__init__.py	/^    def configure(self, graph):$/;"	m	class:Stm
+data	src/objectDetection.py	/^data = objectDetectionMgr.setGraph(img)$/;"	v
 decreaseKey	src/path/bheap.py	/^    def decreaseKey(self, id, newPriority):$/;"	m	class:BHeap
 direct	src/path/vertex.py	/^    def direct(self):$/;"	m	class:Vertex
 disG	src/segmentation.py	/^disG = 280$/;"	v
@@ -44,8 +45,10 @@ dist	src/path/vertex.py	/^    def dist(self):$/;"	m	class:Vertex
 edgeL	src/path/graph.py	/^    def edgeL(self):$/;"	m	class:Graph
 edgeL	src/path/vertex.py	/^    def edgeL(self):$/;"	m	class:Vertex
 graph	src/graph.py	/^graph = Graph()$/;"	v
+graph	src/objectDetection.py	/^graph = Graph()$/;"	v
 id	src/path/edge.py	/^    def id(self):$/;"	m	class:Edge
 id	src/path/vertex.py	/^    def id(self):$/;"	m	class:Vertex
+img	src/objectDetection.py	/^img = cv2.imread('..\/data\/data7.jpg')$/;"	v
 img	src/segmentation.py	/^img = cv2.imread('..\/data\/data7.jpg')$/;"	v
 initEdge	src/path/graph.py	/^    def initEdge(self):$/;"	m	class:Graph
 initializeSSSP	src/path/vertex.py	/^    def initializeSSSP(self, n):$/;"	m	class:Vertex
@@ -54,6 +57,7 @@ isEmpty	src/path/bheap.py	/^    def isEmpty(self):$/;"	m	class:BHeap
 isLight	src/path/vertex.py	/^    def isLight(self):$/;"	m	class:Vertex
 light	src/path/vertex.py	/^    def light(self):$/;"	m	class:Vertex
 loaction	src/path/vertex.py	/^    def loaction(self):$/;"	m	class:Vertex
+objectDetectionMgr	src/objectDetection.py	/^objectDetectionMgr = ObjectDetectionMgr()$/;"	v
 otherVertex	src/path/edge.py	/^    def otherVertex(self, i):$/;"	m	class:Edge
 parent	src/path/vertex.py	/^    def parent(self):$/;"	m	class:Vertex
 pathMgr	src/main.py	/^pathMgr = PathMgr()$/;"	v
@@ -67,8 +71,7 @@ res	src/segmentation.py	/^res = np.sum(abs(arrayR - img), axis = 2) < disR$/;"	v
 res	src/segmentation.py	/^res = res * 255$/;"	v
 rpi	src/rpi.py	/^rpi = Rpi()$/;"	v
 setDirect	src/path/vertex.py	/^    def setDirect(self, locate):$/;"	m	class:Vertex
-setGraph	src/objectDetection/__init__.py	/^    def setGraph(self, image, graph):$/;"	m	class:ObjectDetectionMgr
-setGraph	src/path/__init__.py	/^    def setGraph(self, image, data):$/;"	m	class:PathMgr
+setGraph	src/objectDetection/__init__.py	/^    def setGraph(self, image):$/;"	m	class:ObjectDetectionMgr
 setGraph	src/segmentation/__init__.py	/^    def setGraph(self, image, graph):$/;"	m	class:SegmentationMgr
 setLocation	src/path/vertex.py	/^    def setLocation(self, x, y):$/;"	m	class:Vertex
 setParent	src/path/vertex.py	/^    def setParent(self, id):$/;"	m	class:Vertex
@@ -83,6 +86,7 @@ smallest	src/path/bheap.py	/^    def smallest(self):$/;"	m	class:BHeap
 solve	src/path/__init__.py	/^    def solve(self):$/;"	m	class:PathMgr
 solve	src/path/graph.py	/^    def solve(self):$/;"	m	class:Graph
 stm	src/graph.py	/^stm = Stm()$/;"	v
+updateEdge	src/path/graph.py	/^    def updateEdge(self, data):$/;"	m	class:Graph
 vertex	src/path/edge.py	/^    def vertex(self):$/;"	m	class:Edge
 vertexL	src/path/graph.py	/^    def vertexL(self):$/;"	m	class:Graph
 weight	src/path/edge.py	/^    def weight(self):$/;"	m	class:Edge

@@ -128,6 +128,11 @@ class Graph:
         self._edgeL[24].setX(10, 202)
         self._edgeL[24].setY(267,320)
 
+    def updateEdge(self, data):
+        point = np.zeros(640, 320)
+        point[data] = 1
+        for e in self._edgeL:
+            e.setWeight(np.sum(point[e.xRange()[0]:e.xRange()[1], e.yRange()[0]: e.yRange()[1]]))
     def simpleInit(self):
         for e in self._edgeL:
             e.setWeight(1)
