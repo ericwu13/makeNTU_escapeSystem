@@ -132,7 +132,7 @@ class Graph:
         point = np.zeros((640, 320))
         print(point.shape)
         print(data)
-        data[point] = 1
+        data[point] += 1
         print(point[282,94])
         print(point[282,95])
         print(point[295,44])
